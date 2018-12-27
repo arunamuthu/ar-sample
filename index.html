@@ -9,8 +9,16 @@
       <a-cylinder position="0.75 0.5 -2" radius="0.5" height="1" color="yellow"></a-cylinder>
     </a-marker> -->
     <a-marker preset='kanji'>
-        <a-plane position="0 0 -2.5" rotation="-90 0 0" width="2" height="2" color="green"></a-plane>
-        <a-sphere position="0 1 -4" radius="1" color="red"></a-sphere>
+        <a-sphere position="0 1 -4" radius="1" color="red">
+            <a-animation attribute="rotation"
+            dur="10000"
+            fill="forwards"
+            to="0 360 0"
+            repeat="indefinite">
+            </a-animation>
+        </a-sphere>
+        <a-plane position="0 0 -2.5" rotation="-90 0 0" width="2" height="2" color="green">
+        </a-plane>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
